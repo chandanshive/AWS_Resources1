@@ -15,6 +15,10 @@ resource "aws_s3_bucket" "accuricsbucketdemo" {
   bucket = "my-tf-test-bucket"
 
   tags = {
-    Name        = "bucketdemo"
+    Name = "bucketdemo"
+  }
+
+  logging {
+    target_bucket = "<target_bucket_name>"
   }
 }
