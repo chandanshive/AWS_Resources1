@@ -17,8 +17,4 @@ resource "aws_s3_bucket" "accuricsbucketdemo" {
   tags = {
     Name = "bucketdemo"
   }
-
-  versioning {
-    enabled = true
-  }
 }
