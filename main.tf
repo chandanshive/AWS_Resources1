@@ -31,6 +31,10 @@ resource "aws_s3_bucket" "accuricsbucketdemo" {
       }
     }
   }
+
+  versioning {
+    enabled = true
+  }
 }
 
 resource "aws_vpc" "<resource_name>" {
