@@ -7,7 +7,7 @@ resource "aws_instance" "webserver" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "webserver"
+    Name = "webserver1"
   }
 }
 
@@ -15,6 +15,6 @@ resource "aws_s3_bucket" "accuricsbucketdemo" {
   bucket = "my-tf-test-bucket"
 
   tags = {
-    Name = "bucketdemo"
+    Name = "bucketdemo1"
   }
 }
