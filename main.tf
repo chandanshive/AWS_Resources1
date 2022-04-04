@@ -19,3 +19,11 @@ resource "aws_s3_bucket" "accuricsbucketdemo" {
     Name = "bucketdemo"
   }
 }
+
+resource aws_s3_bucket_versioning example {
+  bucket = aws_s3_bucket.my-tf-test-bucket.bucket
+
+  versioning_configuration {
+    status = Enabled
+  }
+}
